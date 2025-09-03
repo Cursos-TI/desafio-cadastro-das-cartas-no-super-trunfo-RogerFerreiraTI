@@ -1,3 +1,26 @@
+/**
+ * ===========================================
+ *                Super Trunfo - Países - Cadastro das Cartas 
+ *                 Nível Mestre: Comparação e Super Poder
+ * ===========================================
+ *
+Diferença em relação ao Nível Aventureiro:
+*   Comparação de Cartas: O usuário poderá comparar as duas cartas.
+*   Super Poder: Soma de todos os atributos (inclusive os calculados), com a densidade populacional invertida antes da soma (1/densidade).  Tipo: `float`.
+
+Funcionalidades do Sistema:
+*   Comparação atributo a atributo, mostrando qual carta venceu (1 se a Carta 1 vence, 0 se a Carta 2 vence).
+*   Para Densidade Populacional, vence a carta com o menor valor.
+*   Para os demais atributos (e o Super Poder), vence a carta com o maior valor.
+
+Entrada e Saída de Dados:
+*   Mesma entrada dos níveis anteriores, mas a População agora é `unsigned long int`.
+*   A saída mostrará o resultado da comparação para cada atributo e o Super Poder. 
+
+* Autor: Roger Ferreira
+ * ===========================================
+ */
+
 #include <stdio.h>
 
 int main() {
@@ -167,7 +190,6 @@ int main() {
     }
     
     printf("\nObrigado por jogar Super Trunfo - Países!\n");
-    printf("Desenvolvido por Roger Ferreira\n");
-    
+        
     return 0;
 }
